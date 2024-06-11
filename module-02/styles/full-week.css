@@ -1,0 +1,62 @@
+/* 
+
+Cascading in CSS (Cascading Style Sheets) refers to the way styles are applied to HTML elements in a hierarchical order of importance. The "cascade" aspect of CSS determines how styles are combined when multiple rules apply to a particular element. This involves three main concepts: specificity, inheritance, and the cascade order. Here’s a brief overview of each:
+
+Specificity: This determines which style rule applies if multiple rules target the same element. Specificity is calculated based on the types of selectors used:
+
+Inline styles have the highest specificity (e.g., <div style="color: red;">).
+ID selectors (e.g., #header) have more specificity than class selectors (e.g., .nav), which in turn have more specificity than element selectors (e.g., div).
+Inheritance: Some CSS properties are inherited from parent elements to child elements, while others are not. For example, text-related properties such as color and font-family are inherited, whereas box model properties like margin and border are not.
+
+Cascade Order: When multiple rules apply to the same element, the browser determines which rule to apply based on the following order of precedence:
+
+Importance: Rules marked with !important have the highest priority.
+Origin: Styles are applied in this order of priority: user agent styles (browser default styles), user styles (styles set by the user), and author styles (styles defined by the webpage).
+Specificity: More specific selectors override less specific ones.
+Source Order: When specificity and importance are the same, the last rule in the CSS file overrides the earlier ones.
+
+*/
+
+h1 {
+  font-size: 48px;
+  color: rgb(71, 62, 62);
+  margin: 24px 0px;
+}
+
+/*  
+CSS Box Model
+    Content
+    Padding
+    Border
+    Margin
+*/
+
+a {
+  background-color: rgb(167, 1, 78);
+  padding: 12px 48px;
+  border-radius: 10px;
+  border: 2px solid rgb(180, 12, 90);
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+/* Pseudo selector */
+a:hover {
+  text-decoration: none;
+  background-color: rgb(180, 12, 90);
+  box-shadow: 0px 0px 6px rgb(180, 12, 90);
+}
+
+ol {
+  list-style: none;
+  width: 500px;
+  margin: 36px auto 0 auto;
+  padding: 0;
+}
+
+li {
+  background-color: rgb(223, 136, 124);
+  border-radius: 5px;
+  margin: 32px;
+  padding: 16px;
+}
