@@ -1,0 +1,28 @@
+/* type selector */
+body {
+  margin: 50px;
+}
+
+/* 
+  text-align: align the content not the element! so it doesnt effect if use inside img because 
+  img doesn't have any content (it's void element) 
+  but it effect in body because body has content (it's children or nested element) 
+*/
+
+/* type selector */
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+/* 
+    px: A device independent pixel on the screen | Absolute
+*/
+
+/* id selector (should be unique in html) */
+#todays-challenge {
+  color: blue;
+  font-size: 52px;
+  font-weight: bold;
+}
