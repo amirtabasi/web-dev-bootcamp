@@ -17,10 +17,14 @@ Source Order: When specificity and importance are the same, the last rule in the
 
 */
 
+header {
+  margin-bottom: 64px;
+}
+
 h1 {
   font-size: 48px;
   color: rgb(71, 62, 62);
-  margin: 24px 0px;
+  margin: 0 0;
 }
 
 /*  
@@ -31,6 +35,20 @@ CSS Box Model
     Margin
 */
 
+/* 
+selectors:
+Type: elementname
+ID: #id
+Group: elementname, elementname ...
+Class: .class
+*/
+
+/* 
+Combinators:
+Descendant: li p (all p with li ancestor)
+Child: h2 > p (Only p which are direct children of h2)
+*/
+
 a {
   background-color: rgb(167, 1, 78);
   padding: 12px 48px;
@@ -38,6 +56,10 @@ a {
   border: 2px solid rgb(180, 12, 90);
   color: white;
   transition: all 200ms ease-in-out;
+  /* because anchor is inline element margin top and bottom dosen't effect on it!, but margin left and righ effect on it */
+  margin: 0 0;
+  /* using inline-block change the way anchor element shows in the browser, and now margin top and bottom effect on it */
+  display: inline-block;
 }
 
 /* Pseudo selector */
@@ -59,4 +81,37 @@ li {
   border-radius: 5px;
   margin: 32px;
   padding: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* id selector */
+#description {
+  margin-bottom: 12px 0;
+}
+
+/* combinators */
+/* header p {
+  margin-bottom: 36px;
+} */
+
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", sans-serif;
+}
+
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+}
+
+/* margin collapsing happens for block element and bottom or top margin, and the bigger value wins */
+
+/* specificity */
+/* .daily-goal {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+} */
+
+.highlight-goal {
+  background-color: rgb(226, 115, 111);
 }
