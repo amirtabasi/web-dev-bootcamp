@@ -1,0 +1,78 @@
+body {
+  background-color: rgba(115, 10, 215, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+header {
+  text-align: center;
+  color: rgb(115, 10, 215);
+  font-weight: bold;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+header img {
+  width: 250px;
+}
+
+main {
+  width: 700px;
+  border-radius: 5px;
+  background-color: rgb(115, 10, 215);
+  color: white;
+  padding: 20px 30px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 14px 0px;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
+}
+
+.tip-item {
+  border-color: yellow;
+  color: rgb(245, 245, 170);
+}
+
+a {
+  text-decoration: none;
+}
+
+.reference-btn {
+  background-color: rgb(245, 245, 170);
+  color: rgb(65, 2, 124);
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 150ms ease-in-out;
+}
+
+.reference-btn:hover {
+  box-shadow: 0px 0px 5px 2px rgba(245, 245, 170, 0.5);
+  background-color: rgb(233, 195, 28);
+}
+
+footer {
+  text-align: center;
+  margin: 25px auto 50px auto;
+}
+
+.download-btn {
+  background-color: rgb(235, 190, 0);
+  color: rgb(50, 50, 50);
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  box-shadow: 0px 0px 5px 2px rgba(235, 190, 0, 0.5);
+}
